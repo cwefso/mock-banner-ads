@@ -1,7 +1,5 @@
 // /*BANNER ANIMATION SCRIPT */
 
-// gsap.to("img", 10, { delay: 0.5, y: -30 });
-
 gsap.from(".text", 1, {
 	delay: 0.5,
 	scale: 0.01,

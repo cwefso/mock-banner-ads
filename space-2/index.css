@@ -1,6 +1,38 @@
-/*add your google webfonts they must be the first lines in your CSS*/
+/* reset styles */
+html,
+body,
+div,
+span,
+h1,
+h2,
+p,
+img,
+ul,
+li,
+figure {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	list-style: none;
+}
 
-/* @import url(https://fonts.googleapis.com/css?family=Share+Tech); */
+body {
+	line-height: 1;
+}
+
+
+figure {
+	display: block;
+}
+
+ul {
+	list-style: none;
+}
+
 
 /*define the general banner layout*/
 
@@ -59,7 +91,6 @@ li {
 	text-align: right;
 	color: white;
 	font-size: 60px;
-	/* word-spacing: -10px; */
 	line-height: 60px;
 	text-shadow: 0 0 10px black;
 }
