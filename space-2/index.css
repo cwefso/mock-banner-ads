@@ -1,0 +1,135 @@
+/*add your google webfonts they must be the first lines in your CSS*/
+
+/* @import url(https://fonts.googleapis.com/css?family=Share+Tech); */
+
+/*define the general banner layout*/
+
+figure,
+.logo-container {
+	min-width: 300px;
+	min-height: 250px;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	overflow: hidden;
+	perspective: 400px;
+}
+
+.logo-container {
+	background-color: white;
+	opacity: 0;
+}
+
+/*establish a parent/child relationship for precise positioning*/
+
+figure, .logo-container {
+	position: relative;
+}
+
+img, 
+.heading,
+.blast-off,
+.rocket, button {
+	position: absolute;
+}
+
+/*Now dress up the type and layout*/
+
+h1,
+h2 {
+	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	color: white;
+	padding: 10px;
+	font-size: 55px;
+	letter-spacing: 3px;
+}
+
+button {
+	font: italic 20px mrs-eves, serif;
+	font-size: x-large;
+	padding: 5px 40px;
+	border: 3px solid white;
+	background-color: rgba(115, 0, 195);
+	color: white;
+	font-weight: bolder;
+	border-radius: 15px;
+}
+
+li {
+	font-family: Futura, Trebuchet MS, Arial, sans-serif;
+	text-transform: uppercase;
+	text-align: right;
+	color: white;
+	font-size: 60px;
+	/* word-spacing: -10px; */
+	line-height: 60px;
+	text-shadow: 0 0 10px black;
+}
+
+ul,
+.main {
+	display: flex;
+	flex-direction: row;
+}
+
+.logo {
+	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	color: white;
+	font-size: 30px;
+	width: 290px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+.heading, .text, .blast-off, .logo-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.rocket {
+	height: 98px;
+	width: 102px;
+}
+
+/*Now position all the elements*/
+
+img {
+	right: 0;
+}
+
+.rocket {
+	right: -100px;
+	top: -80px;
+}
+
+.heading {
+	top: 12px;
+	left: 15px;
+}
+
+.blast-off {
+	top: 40px;
+	left: 15px;
+}
+
+.logo {
+	top: -5px;
+	left: 5px;
+}
+
+button {
+	bottom: 50px;
+	left: 50px;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+button:hover {
+	background-color: rgb(65, 0, 112);
+}
